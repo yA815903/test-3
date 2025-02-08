@@ -3,17 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Star Wars Lightsaber</title>
-    <link rel="stylesheet" href="css/style.css"> <!-- Link to the CSS file -->
+    <title>2D RPG Game</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div class="saber">
-        <div class="handle">
-            <div class="bt"></div>
-            <div class="bt"></div>    
-        </div>
-        <div class="blade"></div>
-    </div>
-    <script src="app.js"></script>
+    <h1>2D RPG Game</h1>
+    <div id="unityContainer" style="width: 800px; height: 600px;"></div>
+    <script src="Build/UnityLoader.js"></script>
+    <script>
+        var gameInstance = UnityLoader.instantiate("unityContainer", "Build/2DRPGGame.json");
+    </script>
 </body>
 </html>
